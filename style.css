@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+.backgroundimage {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.lockscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  animation: slideup 3s ease-in-out 1s forwards;
+}
+
+
+@keyframes slideup {
+  to {
+    transform: translateY(-100%);
+  }
+  
+}
+
+
+.lockscreen button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 60px;
+  width: 220px;
+  border-radius: 50px;
+  /* box-shadow: 0 5px rgba(0, 0, 0, 0.4); */
+
+
+  transform: translate(-50%, -50%);
+}
+
+.lockscreen h2 {
+  position: absolute;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  top: 10%;
+  left: 40%;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  
+}
+
+
+.folder a {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.folder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 40px;
+  gap: px;
+}
+.folder {
+  display:flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 50px;
+  background-color: brown;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  font-size: 20px;
+  width: min(360px, 90vw);
+  border-radius: 50px;
+  color: aliceblue;
+}
+
+.home img {
+  margin-left: 0;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  
+  filter: brightness(0) invert(1);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  flex: 1;
+  min-width: 10px;
+  padding: 0 10px;
+  border: 1px solid #b8b8b8;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222;
+}
+
+.search-icon {
+  flex: 0 0 15px;
+  width: 15px;
+  height: 15px;
+  margin: 0 !important;
+  filter: none !important;
+}
+
+.search-box input::placeholder {
+  color: #777;
+}
+
+
+.folder p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+
+.clock {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-top: -150px;
+}
+
+.clock h2 {
+  font-size: 90px;
+  font-weight: 400;
+  /* margin: 0; */
+  text-shadow: 2px 2px 2px black;
+}
+
+.clock p {
+  font-size: 20px;
+  margin-top: 5px;
+  text-shadow: 1px 1px 1px black;
+}
